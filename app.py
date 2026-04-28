@@ -45,7 +45,7 @@ def login():
         return redirect('/')
 
 # 회원 가입 api 생성
-@app.route('/signup2', methods =['post'])
+@app.route('/signup2', methods=['POST'])
 def signup2():
     print('/signup2[post] input_data : ', request.form)
     # request.form -> { 'input_id' 'xxxx', 'input_pass': 'xxxx', 'input_name' : 'xxxx' }
